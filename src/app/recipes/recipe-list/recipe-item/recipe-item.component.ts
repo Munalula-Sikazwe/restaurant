@@ -9,8 +9,8 @@ import { Recipe } from '../../recipe.model';
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent implements OnInit {
-  recipe!: Recipe;
-
+ @Input() recipe!: Recipe;
+@Input() index:number = 0;
 
   constructor()  { }
 
